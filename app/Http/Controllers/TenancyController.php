@@ -9,4 +9,7 @@ class TenancyController extends Controller
     public function create(){
         return view('tenant.create');
     }
+    public function store(Request $request){
+        return $request->all();
+    }
 }
